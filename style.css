@@ -1,0 +1,83 @@
+main{
+    display: flex;
+    margin-left: 34px;    
+}
+
+.input-texto{
+    position: relative;    
+}
+
+body{   
+    background-color: #dceaf8;
+}
+.cabeza{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.box{
+    display: flex;
+    margin: 2px;
+}
+
+.informacion{
+    color: gray;
+    font-size: 15px;    
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+.botones-enc-des{
+    margin-top: 20px;
+    margin-left: 18%;
+}
+
+.encriptar,.desencriptar{
+    color: white;
+    background:#0a3871;
+    border-radius: 20px;   
+    border: 0.5px solid black;
+    margin: 0 0 0 50px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 55px;
+}
+
+.encriptar:hover,.desencriptar:hover,.copiar:hover{
+    color: #0a3871;
+    background: #d8dfe8;
+}
+
+/* Configuracion del area de texto de resultado */
+.mensaje{   
+    text-align: justify ;       
+    border-radius: 21px;
+    margin-left: 5%;
+    padding: 3% 3%;    
+    background-image: url(images/Muñeco.png);
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center;    
+}
+
+/* Configuracion del mensaje de ayuda */
+.mensaje::placeholder{
+    color: #a8c3e4;    
+    padding: 3% 3%;
+}
+
+.copiado{
+    display: flex;   
+    margin-top: -15%;
+    margin-left: 35%;
+}
+
+.copiar{    
+    color: #0a3871;
+    background:white;
+    border-radius: 20px;   
+    border: 0.5px solid #0a3871;    
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 55px;
+}
