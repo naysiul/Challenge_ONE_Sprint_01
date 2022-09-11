@@ -1,46 +1,74 @@
+body{   
+    /*background-color: #dceaf8;*/
+    /*background: linear-gradient(#e66465, #9198e5); (#622095, #4ca4ec)*/
+    background: linear-gradient(#dceaf8,#8aa9cf, #dceaf8);
+    height: 100vh;
+    
+}
+
+.cabeza{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;    
+}
+
 main{
+    width: 100%;
+    max-width: 1200px;      
+    margin: auto;
     display: flex;
-    margin-left: 34px;    
+    gap: 20px;
+}
+
+/* Seccion 1 - Configuracion del area de texto de ingreso de datos */
+.seccion_1{
+    width: 60%;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .input-texto{
-    position: relative;    
+    width: 100%;
+    margin-left: 2%;
+    font-size: 2em;
+    /*position: relative;  */  
 }
 
-body{   
-    background-color: #dceaf8;
-}
-.cabeza{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.box{
+.area_informacion{
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 2%;
     display: flex;
-    margin: 2px;
 }
 
 .informacion{
-    color: gray;
+    width: 100%;
+    color: rgb(78, 78, 78);
     font-size: 15px;    
-    margin-top: 1px;
+    margin-top: 5px;
     margin-left: 5px;
 }
 
 .botones-enc-des{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
     margin-top: 20px;
-    margin-left: 18%;
+    margin-left: 2%;
 }
 
-.encriptar,.desencriptar{
-    color: white;
-    background:#0a3871;
-    border-radius: 20px;   
-    border: 0.5px solid black;
-    margin: 0 0 0 50px;
-    font-size: 15px;
-    font-weight: bold;
+.encriptar,.desencriptar{    
+    width: 100%;
+    margin-left: 1%;
     padding: 13px 55px;
+    color: white;
+    background:#0a3871;    
+    border-radius: 20px;   
+    border: 0.5px solid black;    
+    margin: 0 10% 0 10%;
+    font-size: 15px;
+    font-weight: bold;    
 }
 
 .encriptar:hover,.desencriptar:hover,.copiar:hover{
@@ -48,15 +76,25 @@ body{
     background: #d8dfe8;
 }
 
-/* Configuracion del area de texto de resultado */
-.mensaje{   
+/* Seccion 2 - Configuracion del area de texto de resultado */
+.seccion_2{
+    width: 40%;
+    margin-right: 0;
+}
+
+.mensaje{
+    /* resize agregado */
+    font-size: 2em;
+    resize: none;
+    width: 90%;  
+    display: flex; 
     text-align: justify ;       
-    border-radius: 21px;
-    margin-left: 5%;
+    border-radius: 21px;    
+    margin-right: 2%;
     padding: 3% 3%;    
     background-image: url(images/Muñeco.png);
     background-repeat: no-repeat;
-    background-size: contain;    
+    /*background-size: contain;*/    
     background-position: center;    
 }
 
@@ -80,4 +118,23 @@ body{
     font-size: 15px;
     font-weight: bold;
     padding: 13px 55px;
+}
+
+footer{
+    margin-top: 6%;
+    max-width: 100%;
+    height: 40px;
+    align-items: center;   
+    /*width: 100%;*/
+    padding: 15px 15px;
+   
+}
+.autor{  
+    font-family: 'Nothing You Could Do', cursive;     
+    margin-top: -3%;
+    font-size: 3em;   
+    color: #f0f1f2;    
+    text-align: center;    
+    width: 100%;    
+    text-shadow: 5px 5px 5px #7495d6;
 }
